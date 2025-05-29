@@ -1,0 +1,42 @@
+2025-05-27 18:19:00.882183+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEALS" not found (this database is empty); SQL statement:
+SELECT * FROM meals [42104-232]
+2025-05-27 18:43:05.388539+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "delete [*]table meals"; expected "identifier"; SQL statement:
+delete table meals [42001-232]
+2025-05-27 18:43:13.233933+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "delete [*]table MEALS"; expected "identifier"; SQL statement:
+delete table MEALS [42001-232]
+2025-05-27 18:43:19.305239+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "delete [*]table MEALS"; expected "identifier"; SQL statement:
+delete table MEALS [42001-232]
+2025-05-27 18:43:19.986027+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "delete [*]table MEALS"; expected "identifier"; SQL statement:
+delete table MEALS [42001-232]
+2025-05-27 18:43:20.452018+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "delete [*]table MEALS"; expected "identifier"; SQL statement:
+delete table MEALS [42001-232]
+2025-05-27 18:43:20.738040+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "delete [*]table MEALS"; expected "identifier"; SQL statement:
+delete table MEALS [42001-232]
+2025-05-27 18:43:21.279711+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "delete [*]table MEALS"; expected "identifier"; SQL statement:
+delete table MEALS [42001-232]
+2025-05-27 18:43:21.494044+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "delete [*]table MEALS"; expected "identifier"; SQL statement:
+delete table MEALS [42001-232]
+2025-05-27 18:43:22.292402+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "delete [*]table MEALS"; expected "identifier"; SQL statement:
+delete table MEALS [42001-232]
+2025-05-27 18:43:41.968193+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "delete [*]TABLE MEALS"; expected "identifier"; SQL statement:
+delete TABLE MEALS [42001-232]
+2025-05-27 19:08:27.330264+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEALS" already exists; SQL statement:
+CREATE TABLE meals ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, category VARCHAR(50) NOT NULL, price DECIMAL(6,2) NOT NULL, description TEXT, allergies VARCHAR(255), image_path VARCHAR(255), nutrition_info TEXT ) [42101-232]
+2025-05-27 19:11:04.160944+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEALS" already exists; SQL statement:
+CREATE TABLE meals ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, category VARCHAR(50) NOT NULL, price DECIMAL(6,2) NOT NULL, description TEXT, allergies VARCHAR(255), image_path VARCHAR(255), nutrition_info TEXT ) [42101-232]
+2025-05-27 19:14:27.015990+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEALS" already exists; SQL statement:
+CREATE TABLE meals ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, category VARCHAR(50) NOT NULL, price DECIMAL(6,2) NOT NULL, description TEXT, allergies VARCHAR(255), image_path VARCHAR(255), nutrition_info TEXT ) [42101-232]
