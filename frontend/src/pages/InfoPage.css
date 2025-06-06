@@ -1,10 +1,42 @@
 /* InfoPage.css */
+<<<<<<< HEAD
 
 /* Kart-boksen */
 .map-box {
   width: 100%;
   height: 24rem;
   border: 4px solid #000;
+=======
+.infopage-container{
+  background-color: #0a0000;
+}
+
+/* Gjø r alle overskrifter og paragraf-tekster under .infopage-container hvite */
+.infopage-container h1,
+.infopage-container h2,
+.infopage-container p,
+.infopage-container strong,
+.infopage-container span {
+  color: #ffffff;
+}
+
+/* Gjør også listetekst (åpningstider) hvit */
+.infopage-container .opening-hours-list,
+.infopage-container .opening-hours-list li,
+.infopage-container .opening-hours-day,
+.infopage-container .opening-hours-time {
+  color: #ffffff;
+}
+
+/* ===== Tilpass border‐farger på boksene ===== */
+
+/* Kart-boksen */
+/* Kart‐boksen: bytt fra svart (#000) til hvit (#fff) */
+.map-box {
+  width: 100%;
+  height: 24rem;
+  border: 4px solid #ffffff;     /* ← endret til hvit */
+>>>>>>> 804ea3e5 (initial commit)
   border-radius: 1rem;
   overflow: hidden;
   transition: transform 0.3s ease;
@@ -13,12 +45,21 @@
   transform: scale(1.05);
 }
 
+<<<<<<< HEAD
 /* Åpningstider-boksen */
 .opening-hours-box {
   width: 100%;
   max-width: 30rem;
   background: #fff;
   border: 4px solid #000;
+=======
+/* Åpningstider‐boksen: bytt fra svart til hvit, og bakgrunn til litt mørkere grå om ønskelig */
+.opening-hours-box {
+  width: 100%;
+  max-width: 30rem;
+  background: rgba(255,255,255,0.1); /* litt lys bakgrunn – juster om ønskelig */
+  border: 4px solid #ffffff;         /* ← endret til hvit */
+>>>>>>> 804ea3e5 (initial commit)
   border-radius: 1rem;
   padding: 0.5rem 1rem;
   transition: transform 0.3s ease;
@@ -52,6 +93,7 @@
   margin-left: auto;
 }
 
+<<<<<<< HEAD
 /* Kontakt-tekstfelt */
 .contact-box {
   width: 100%;
@@ -60,6 +102,22 @@
   padding: 1rem;
   transition: box-shadow 0.3s;
 }
+=======
+/* Kontakt‐tekstfeltet: bytt grense til hvit og pass på at bakgrunnen er mørk nok */
+.contact-box {
+  width: 100%;
+  border: 2px solid #ffffff;       /* ← endret til hvit */
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #1a1a1a;       /* sørg for at innskriftsfeltet får mørk bakgrunn */
+  color: #ffffff;                  /* tekst inne i tekstfeltet skal være hvit */
+  transition: box-shadow 0.3s;
+}
+
+.contact-box::placeholder {
+  color: #dddddd;                  /* placeholder‐tekst i textarea kan være lys grå for kontrast */
+}
+>>>>>>> 804ea3e5 (initial commit)
 .contact-box:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(0,0,0,0.4);
@@ -68,7 +126,11 @@
 
 /* ... eksisterende CSS ... */
 
+<<<<<<< HEAD
 /* Tvinger Google-mapa til å fylle hele .map-box */
+=======
+/* ===== Behold Google‐kartet fullt ut (ingen endringer her) ===== */
+>>>>>>> 804ea3e5 (initial commit)
 .map-box iframe {
   width: 100% !important;
   height: 100% !important;

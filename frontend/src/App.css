@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+>>>>>>> 804ea3e5 (initial commit)
 .App {
   text-align: center;
 }

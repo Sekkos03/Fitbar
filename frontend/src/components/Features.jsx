@@ -2,6 +2,10 @@
 import { Row, Col, Card as BSCard } from 'react-bootstrap';
 import './Features.css';
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 804ea3e5 (initial commit)
 export default function Features({ cards }) {
   const staticContent = [
     {
@@ -37,7 +41,12 @@ export default function Features({ cards }) {
 
           <div className="mt-3 text-center px-2">
             <h3 className="fw-bold">{staticContent[idx].title}</h3>
+<<<<<<< HEAD
             <p className="text-muted">{staticContent[idx].desc}</p>
+=======
+            <p className="text-white">{staticContent[idx].desc}</p>
+
+>>>>>>> 804ea3e5 (initial commit)
           </div>
         </Col>
       ))}

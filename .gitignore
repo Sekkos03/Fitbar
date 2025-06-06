@@ -31,3 +31,7 @@ build/
 
 ### VS Code ###
 .vscode/
+<<<<<<< HEAD
+=======
+"data/*.mv.db" 
+>>>>>>> 804ea3e5 (initial commit)

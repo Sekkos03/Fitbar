@@ -57,7 +57,11 @@ export default function Navbar() {
               <p><strong>E-Mail</strong><br/>fitbar@vaerste.no</p>
               <p><strong>Telefon</strong><br/>123456789</p>
               <p><strong>Sosiale medier</strong><br/>
+<<<<<<< HEAD
                 Instagram: fitbar<br/>
+=======
+                Instagram: fitbar_fredrikstad<br/>
+>>>>>>> 804ea3e5 (initial commit)
                 Facebook: fitbar<br/>
                 Snapchat: fitbar
               </p>

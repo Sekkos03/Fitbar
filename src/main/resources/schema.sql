@@ -9,4 +9,12 @@ CREATE TABLE meals (
     allergies      VARCHAR(255),
     image_path     VARCHAR(255),
     nutrition_info TEXT
+<<<<<<< HEAD
 );
+=======
+<<<<<<< HEAD
+);
+=======
+);
+>>>>>>> 6f84a060 (Inital commit)
+>>>>>>> 804ea3e5 (initial commit)

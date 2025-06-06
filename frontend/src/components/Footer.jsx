@@ -1,10 +1,18 @@
 // src/components/Footer.jsx
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaInstagram, FaFacebook } from 'react-icons/fa';
+<<<<<<< HEAD
 
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-5">
+=======
+import './Footer.css';
+
+export default function Footer() {
+  return (
+    <footer className="bg-black text-white py-5 shadow-glow-top">
+>>>>>>> 804ea3e5 (initial commit)
       <Container>
         <Row className="text-center align-items-start">
           {/* Left column */}
@@ -19,7 +27,11 @@ export default function Footer() {
             <p className="mb-3">E-post: <a href="mailto:stephan@fitbar.no" className="text-white text-decoration-underline">stephan@fitbar.no</a></p>
 
             <div className="d-flex justify-content-center align-items-center mb-2">
+<<<<<<< HEAD
               <a href="#" className="text-white me-3">
+=======
+              <a href="https://www.instagram.com/fitbar_fredrikstad/" className="text-white me-3">
+>>>>>>> 804ea3e5 (initial commit)
                 <FaInstagram size={28} />
               </a>
               <span className="h4 mb-0">Fitbar</span>
@@ -42,4 +54,7 @@ export default function Footer() {
     </footer>
   );
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 804ea3e5 (initial commit)

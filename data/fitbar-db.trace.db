@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 804ea3e5 (initial commit)
 2025-05-27 18:19:00.882183+02:00 jdbc[13]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEALS" not found (this database is empty); SQL statement:
 SELECT * FROM meals [42104-232]
@@ -40,3 +44,20 @@ CREATE TABLE meals ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT
 2025-05-27 19:14:27.015990+02:00 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MEALS" already exists; SQL statement:
 CREATE TABLE meals ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, category VARCHAR(50) NOT NULL, price DECIMAL(6,2) NOT NULL, description TEXT, allergies VARCHAR(255), image_path VARCHAR(255), nutrition_info TEXT ) [42101-232]
+<<<<<<< HEAD
+=======
+=======
+2025-06-04 21:44:06.569733+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE meals ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, category VARCHAR(50) NOT NULL, price DECIMAL(6,2) NOT NULL, description TEXT, allergies VARCHAR(255), image_path VARCHAR(255), nutrition_info TEXT ) [*]CHARACTER SET utf8mb4"; SQL statement:
+CREATE TABLE meals ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, category VARCHAR(50) NOT NULL, price DECIMAL(6,2) NOT NULL, description TEXT, allergies VARCHAR(255), image_path VARCHAR(255), nutrition_info TEXT ) CHARACTER SET utf8mb4 [42000-232]
+2025-06-04 21:44:29.053631+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE meals ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, category VARCHAR(50) NOT NULL, price DECIMAL(6,2) NOT NULL, description TEXT, allergies VARCHAR(255), image_path VARCHAR(255), nutrition_info TEXT ) [*]CHARACTER SET utf8mb4"; SQL statement:
+CREATE TABLE meals ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, category VARCHAR(50) NOT NULL, price DECIMAL(6,2) NOT NULL, description TEXT, allergies VARCHAR(255), image_path VARCHAR(255), nutrition_info TEXT ) CHARACTER SET utf8mb4 [42000-232]
+2025-06-04 21:46:42.412980+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE meals ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, category VARCHAR(50) NOT NULL, price DECIMAL(6,2) NOT NULL, description TEXT, allergies VARCHAR(255), image_path VARCHAR(255), nutrition_info TEXT ) [*]CHARACTER SET utf8mb4"; SQL statement:
+CREATE TABLE meals ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, category VARCHAR(50) NOT NULL, price DECIMAL(6,2) NOT NULL, description TEXT, allergies VARCHAR(255), image_path VARCHAR(255), nutrition_info TEXT ) CHARACTER SET utf8mb4 [42000-232]
+2025-06-04 21:51:40.527531+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE meals ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, category VARCHAR(50) NOT NULL, price DECIMAL(6,2) NOT NULL, description TEXT, allergies VARCHAR(255), image_path VARCHAR(255), nutrition_info TEXT ) [*]CHARACTER SET utf8mb4"; SQL statement:
+CREATE TABLE meals ( id BIGINT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255) NOT NULL, category VARCHAR(50) NOT NULL, price DECIMAL(6,2) NOT NULL, description TEXT, allergies VARCHAR(255), image_path VARCHAR(255), nutrition_info TEXT ) CHARACTER SET utf8mb4 [42000-232]
+>>>>>>> 6f84a060 (Inital commit)
+>>>>>>> 804ea3e5 (initial commit)

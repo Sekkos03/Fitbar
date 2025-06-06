@@ -1,0 +1,50 @@
+/* OmOssPage.css */
+
+/* 1) Gi hele .omoss-page-container svart bakgrunn */
+.omoss-page-container {
+  background-color: #000000;
+  min-height: 100vh;       /* sørger for at containeren dekker hele høyden */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* 2) Gjør alle overskrifter og avsnitt hvite */
+.omoss-page-container h1,
+.omoss-page-container h2,
+.omoss-page-container p,
+.omoss-page-container span {
+  color: #ffffff;
+}
+
+/* 3) Bilder/hver gründerdel: .bg-black-beholder er allerede svart, men om du vil justere kant/hover osv.: */
+.omoss-page-container .bg-black {
+  background-color: #000000; /* beholder den sorte bakgrunnen på bilde‐diven */
+  /* Hvis du ønsker en hvit border rundt “bildediv” */
+  /* border: 2px solid #ffffff; */
+}
+
+/* 4) Gjør “Hva er Fitbar?”‐boksen mørkere og teksten hvit */
+.omoss-page-container .fitbar-info-wrapper {
+  background-color: #1a1a1a;  /* en litt lysere sort/grå for kontrast */
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.omoss-page-container .fitbar-info-wrapper:hover {
+  transform: scale(1.03);
+}
+
+/* 5) Overstyr .bg-white som ligger rundt “Hva er Fitbar?” slik at den ikke blir hvit */
+.omoss-page-container .bg-white {
+  background-color: transparent; /* fjerner den hvite basen */
+}
+
+/* 6) Overstyr .text-gray-800 i det nerstegående <p> til å bli helt hvit */
+.omoss-page-container .text-gray-800 {
+  color: #ffffff;
+}
+
+/* 7) Sørg for at kolonnenavnene (e.g. grunnlegger‐navnene) også blir hvite, om de har egne klasser */
+.omoss-page-container .text-lg {
+  color: #ffffff;
+}

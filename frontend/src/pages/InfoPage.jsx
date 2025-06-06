@@ -15,6 +15,10 @@ export default function InfoPage() {
   ];
 
   return (
+<<<<<<< HEAD
+=======
+    <div className='infopage-container'>
+>>>>>>> 804ea3e5 (initial commit)
     <Container as="main" className="py-5 flex-grow-1">
       <div className="text-center mb-5">
         <h1 className="text-3xl font-semibold">Info</h1>
@@ -71,5 +75,9 @@ export default function InfoPage() {
         </Col>
       </Row>
     </Container>
+<<<<<<< HEAD
+=======
+    </div>
+>>>>>>> 804ea3e5 (initial commit)
   );
 }

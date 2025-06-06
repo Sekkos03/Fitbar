@@ -1,0 +1,48 @@
+/* HomePage.css */
+
+/* Setter hele HomePage-containeren til svart bakgrunn */
+.home-page-container {
+  background-color: #000000;
+  /* Sørg for at den dekker minst hele skjermhøyden */
+  min-height: 100vh;
+  /* Hvis du vil at innholdet skal ligge litt ned fra toppen */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Gjør all standardtekst (headings, avsnitt osv.) hvit */
+.home-page-container,
+.home-page-container h1,
+.home-page-container h2,
+.home-page-container h3,
+.home-page-container h4,
+.home-page-container h5,
+.home-page-container h6,
+.home-page-container p,
+.home-page-container span,
+.home-page-container a,
+.home-page-container small {
+  color: #ffffff;
+}
+
+/* Eksempel: Hvis Hero-komponenten bruker egne klasser som .hero-header, kan du overstyre slik: */
+.home-page-container .hero-header,
+.home-page-container .hero-subtitle {
+  color: #ffffff;
+}
+
+/* Eksempel: Hvis Features-komponenten bruker kort med klasse .feature-card: */
+.home-page-container .feature-card,
+.home-page-container .feature-card h5,
+.home-page-container .feature-card p {
+  background-color: transparent; /* slik at kortet “blander seg” med den svarte bakgrunnen */
+  color: #ffffff;
+}
+/* HomePage.css */
+
+/* … eksisterende regler … */
+
+/* Gjør alle Card.Text‐elementer hvite */
+.home-page-container .card-text {
+  color: #ffffff;
+}

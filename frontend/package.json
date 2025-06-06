@@ -3,22 +3,36 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@tailwindcss/cli": "^4.1.7",
+=======
+>>>>>>> 804ea3e5 (initial commit)
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.6",
+<<<<<<< HEAD
+=======
+    "lodash": "^4.17.21",
+>>>>>>> 804ea3e5 (initial commit)
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
+<<<<<<< HEAD
     "react-router-dom": "^7.6.1",
+=======
+    "react-router-dom": "^7.6.2",
+>>>>>>> 804ea3e5 (initial commit)
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+<<<<<<< HEAD
     "build:css": "npx tailwindcss -i ./src/index.css -o ./src/tailwind.css --watch",
+=======
+>>>>>>> 804ea3e5 (initial commit)
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -43,8 +57,15 @@
     ]
   },
   "devDependencies": {
+<<<<<<< HEAD
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.7"
+=======
+    "@tailwindcss/postcss": "^4.1.8",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^4.1.8"
+>>>>>>> 804ea3e5 (initial commit)
   }
 }

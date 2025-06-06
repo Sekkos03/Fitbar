@@ -3,6 +3,11 @@ package com.example.fitbar.controller;
 
 import com.example.fitbar.model.Meal;
 import com.example.fitbar.service.MealService;
+<<<<<<< HEAD
+=======
+
+import org.springframework.http.MediaType;
+>>>>>>> 804ea3e5 (initial commit)
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +24,11 @@ public class MealController {
         this.service = service;
     }
 
+<<<<<<< HEAD
     @GetMapping
+=======
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+>>>>>>> 804ea3e5 (initial commit)
     public List<Meal> getMeals(
         @RequestParam(required = false) String category,
         @RequestParam(required = false) Double minPrice,

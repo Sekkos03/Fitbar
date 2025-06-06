@@ -1,7 +1,11 @@
 // src/pages/HomePage.jsx
 import { useState, useEffect } from 'react';
 import { Container }       from 'react-bootstrap';
+<<<<<<< HEAD
 
+=======
+import './HomePage.css';    // ← importer den nye CSS-filen
+>>>>>>> 804ea3e5 (initial commit)
 import Hero     from '../components/Hero';
 import Features from '../components/Features';
 
@@ -33,9 +37,19 @@ export default function HomePage() {
   }, [meals]);
 
   return (
+<<<<<<< HEAD
     <Container as="main" className="flex-grow-1 py-5">
       <Hero />
       <Features cards={cards} />
     </Container>
+=======
+    <div className="home-page-container flex-grow-1 py-5">
+       <Container
+          as="main" >
+            <Hero />
+            <Features cards={cards} />
+            </Container>
+    </div>
+>>>>>>> 804ea3e5 (initial commit)
   );
 }
