@@ -14,7 +14,7 @@ public class WebConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry
                   .addMapping("/api/**")
-                  .allowedOrigins("http://localhost:3003", "http://localhost:3002")
+                  .allowedOrigins("http://localhost:3003", "http://localhost:3002", "https://fitbar-wine.vercel.app")
                   .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                   .allowCredentials(true)
                   .allowedHeaders("*");
