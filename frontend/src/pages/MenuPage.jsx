@@ -29,7 +29,7 @@ export default function MenuPage() {
 
   // 1) HENT ALLE MÅLTIDER FRA BACKEND
   useEffect(() => {
-    fetch('http://localhost:8080/api/meals')
+    fetch(`${process.env.REACT_APP_API_URL}/api/meals`)
       .then(res => res.json())
       .then(setMeals)
       .catch(console.error);
@@ -104,7 +104,7 @@ export default function MenuPage() {
                     >
                       <div className="menu-card-img-wrapper">
                         <img
-                          src={`http://localhost:8080${meal.imagePath}`}
+                          src={`${process.env.REACT_APP_API_URL}${meal.imagePath}`}
                           alt={meal.name}
                           className="w-100 h-100"
                         />
@@ -218,7 +218,7 @@ export default function MenuPage() {
           <Modal.Body className="bg-white text-black">
             <div className="modal-img-wrapper mb-4">
               <img
-                src={`http://localhost:8080${activeMeal.imagePath}`}
+                src={`${process.env.REACT_APP_API_URL}${activeMeal.imagePath}`}
                 alt={activeMeal.name}
                 className="w-100"
               />

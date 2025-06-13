@@ -29,7 +29,7 @@ export default function Features({ cards }) {
           >
             <div className="features-card-img-wrapper">
               <img
-                src={`http://localhost:8080${meal.imagePath}`}
+                src={`${process.env.REACT_APP_API_URL}${meal.imagePath}`}
                 alt={staticContent[idx].title}
               />
             </div>

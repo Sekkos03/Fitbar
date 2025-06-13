@@ -1,7 +1,7 @@
 // src/pages/HomePage.jsx
 import { useState, useEffect } from 'react';
 import { Container }       from 'react-bootstrap';
-import './HomePage.css';    // ← importer den nye CSS-filen
+import './HomePage.css';
 import Hero     from '../components/Hero';
 import Features from '../components/Features';
 
@@ -9,9 +9,8 @@ export default function HomePage() {
   const [meals, setMeals] = useState([]);
   const [cards, setCards] = useState([]);
 
-  // Hent alle måltider
   useEffect(() => {
-    fetch('http://localhost:8080/api/meals')
+    fetch(`${process.env.REACT_APP_API_URL}/api/meals`)
       .then(res => {
         if (!res.ok) throw new Error(res.statusText);
         return res.json();
@@ -20,7 +19,6 @@ export default function HomePage() {
       .catch(console.error);
   }, []);
 
-  // Velg 3 tilfeldige måltider og roter hvert 5 sek
   useEffect(() => {
     if (!meals.length) return;
     const pick = () => {
@@ -34,7 +32,7 @@ export default function HomePage() {
 
   return (
     <div className="home-page-container flex-grow-1 py-5">
-       <Container as="main">
+      <Container as="main">
         <div className="hero-section">
           <Hero />
         </div>
