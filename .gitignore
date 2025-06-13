@@ -1,0 +1,21 @@
+# Ignore local H2 database files
+/data/*.mv.db
+/data/*.trace.db
+
+# Maven build output
+/target/
+/*.iml
+/.classpath
+/.project
+
+# IDE folders
+/.vscode/
+/.idea/
+
+# Front-end dependencies and build
+/frontend/node_modules/
+/frontend/build/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,27 @@
+/* src/components/Features.css */
+
+/* Reserve top 2/3 of the card for the image */
+.features-card-img-wrapper {
+  width: 100%;
+  height: 22rem;   /* 2/3 of 22rem */
+  overflow: hidden;
+}
+
+/* Fill that wrapper completely, cropping as needed */
+.features-card-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* src/components/Features.css */
+
+/* Keyframes for fading in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* Apply fadeIn over 0.8s with a little easing */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}

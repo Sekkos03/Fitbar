@@ -1,0 +1,77 @@
+/* src/pages/HomePage.css */
+
+/* 1) Legg til hero-bakgrunn over hele siden */
+.home-page-container {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 4rem;    /* luft under navbar */
+  padding-bottom: 4rem; /* luft over footer */
+  background-color: #FFF8EC; /* Bakgrunnsfarge rundt bildet */
+}
+
+.home-page-container::before {
+  content: "";
+  position: absolute;
+  /* Vis bildet i original størrelse midt i containeren */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;          /* juster etter ønsket størrelse */
+  height: auto;
+  background-image: url('../assets/fitbar_bakgrunn.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;  /* viser hele bildet uten stretching */
+  opacity: 0.3;               /* juster synlighet */
+  filter: blur(6px);          /* myk uskarphet */
+  z-index: 0;
+}
+
+/* Skyv alt innhold foran bakgrunnen */
+.home-page-container > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* 2) Typografi og tekstfarge */
+.home-page-container,
+.home-page-container h1,
+.home-page-container h2,
+.home-page-container h3,
+.home-page-container h4,
+.home-page-container h5,
+.home-page-container h6,
+.home-page-container p,
+.home-page-container span,
+.home-page-container a,
+.home-page-container small {
+  color: #000; /* mørk tekst mot kremfarget bakgrunn */
+  font-family: 'Poppins', sans-serif;
+}
+
+.home-page-container h1,
+.home-page-container h2,
+.home-page-container .hero-header {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.home-page-container p,
+.home-page-container .hero-subtitle {
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* 3) Features-kort styling */
+.home-page-container .feature-card,
+.home-page-container .feature-card h5,
+.home-page-container .feature-card p {
+  background-color: transparent;
+  color: #000;
+}
+.home-page-container .card-text {
+  color: #000;
+}

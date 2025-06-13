@@ -1,0 +1,52 @@
+/* src/pages/OmOssPage.css */
+.omoss-page-wrapper {
+  background-color: #FFF8EC;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.omoss-page-container {
+  max-width: 960px;
+  margin: 0 auto;
+  color: #000;
+}
+.omoss-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.omoss-intro {
+  margin-bottom: 3rem;
+}
+.omoss-image-col {
+  text-align: center;
+}
+.omoss-logo {
+  max-width: 250px;
+  width: 100%;
+  display: inline-block;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+.omoss-text-col p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.omoss-lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.story-step {
+  text-align: center;
+  padding: 1.5rem;
+}
+.story-step h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+.story-step p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
