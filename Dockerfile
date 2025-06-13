@@ -1,17 +1,17 @@
-# 1) Build stage
-FROM maven:3.8.5-openjdk-17 AS build
+# ─── 1) Build Stage ────────────────────────────────────────────────────
+FROM maven:3.8.5-openjdk-17 AS builder
 WORKDIR /app
 
-# Copy only what’s needed to download deps
+# Pre-fetch dependencies
 COPY pom.xml ./
 COPY .mvn/ .mvn/
 RUN mvn dependency:go-offline -B
 
-# Copy the rest of your code and package
+# Copy the source and package
 COPY src/ src/
 RUN mvn package -DskipTests
 
-# 2) Run stage
+# ─── 2) Run Stage ──────────────────────────────────────────────────────
 FROM eclipse-temurin:17-jre
 WORKDIR /app
 
@@ -19,7 +19,8 @@ WORKDIR /app
 EXPOSE 8080
 
 # Copy the fat-jar from the build stage
-COPY --from=build /app/target/*.jar app.jar
+COPY --from=builder /app/target/*.jar app.jar
 
-# Run it
-ENTRYPOINT ["java", "-jar", "app.jar"]
+# Run the application
+ENTRYPOINT ["java","-jar","app.jar"]
+
