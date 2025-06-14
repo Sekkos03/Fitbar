@@ -1,0 +1,41 @@
+/* src/styles/leaf.css */
+
+.container-with-leaf-decor {
+  position: relative;
+  /* fjern padding-top så bladene kan sitte helt oppe */
+  padding-top: 0;
+}
+
+/* Venstre blad */
+.container-with-leaf-decor::before {
+  content: "";
+  position: absolute;
+  top: -80px;               /* flush mot toppen */
+  left: -30px;              /* flush mot venstre vegg */
+  width: 450px;         /* større */
+  height: 450px;        /* større */
+  background: url('../assets/leaf-top-left.png') no-repeat left top;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Høyre blad */
+.container-with-leaf-decor::after {
+  content: "";
+  position: absolute;
+  top: -120px;               /* flush mot toppen */
+  right: -70px;             /* flush mot høyre vegg */
+  width: 450px;         /* samme størrelse */
+  height: 450px;
+  background: url('../assets/leaf-top-right.png') no-repeat right top;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Sørg for at innholdet ligger over dekorasjonen */
+.container-with-leaf-decor > * {
+  position: relative;
+  z-index: 1;
+}

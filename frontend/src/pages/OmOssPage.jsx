@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './OmOssPage.css';
 import FitbarLogo from '../assets/fitbar_logo.png';
+import './leaf.css';
 
 export default function OmOssPage() {
   return (

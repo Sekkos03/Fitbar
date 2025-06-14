@@ -4,6 +4,8 @@ import { Container }       from 'react-bootstrap';
 import './HomePage.css';
 import Hero     from '../components/Hero';
 import Features from '../components/Features';
+import './leaf.css';
+
 
 export default function HomePage() {
   const [meals, setMeals] = useState([]);
@@ -32,12 +34,14 @@ export default function HomePage() {
 
   return (
     <div className="home-page-container flex-grow-1 py-5">
+      <div className='container-with-leaf-decor'>
       <Container as="main">
         <div className="hero-section">
           <Hero />
         </div>
         <Features cards={cards} />
       </Container>
+      </div>
     </div>
   );
 }

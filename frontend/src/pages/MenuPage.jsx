@@ -12,6 +12,7 @@ import {
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import './MenuPage.css';
+import './leaf.css';
 
 export default function MenuPage() {
   const [meals, setMeals]                   = useState([]);
