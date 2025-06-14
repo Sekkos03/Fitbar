@@ -10,10 +10,10 @@
 .container-with-leaf-decor::before {
   content: "";
   position: absolute;
-  top: -80px;               /* flush mot toppen */
-  left: -30px;              /* flush mot venstre vegg */
-  width: 450px;         /* større */
-  height: 450px;        /* større */
+  top: 0;               /* flush mot toppen */
+  left: 0;              /* flush mot venstre vegg */
+  width: 250px;         /* større */
+  height: 250px;        /* større */
   background: url('../assets/leaf-top-left.png') no-repeat left top;
   background-size: contain;
   pointer-events: none;
@@ -24,10 +24,10 @@
 .container-with-leaf-decor::after {
   content: "";
   position: absolute;
-  top: -120px;               /* flush mot toppen */
-  right: -70px;             /* flush mot høyre vegg */
-  width: 450px;         /* samme størrelse */
-  height: 450px;
+  top: 0;               /* flush mot toppen */
+  right: 0;             /* flush mot høyre vegg */
+  width: 250px;         /* samme størrelse */
+  height: 250px;
   background: url('../assets/leaf-top-right.png') no-repeat right top;
   background-size: contain;
   pointer-events: none;
