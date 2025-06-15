@@ -13,6 +13,11 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import './MenuPage.css';
 import './leaf.css';
+import ResizedImage from '../components/ResizedImage';
+
+const LOCAL_API = 'http://localhost:8080';
+const PROD_API  = 'https://fitbar.onrender.com';
+const API_BASE  = window.location.hostname === 'localhost' ? LOCAL_API : PROD_API;
 
 export default function MenuPage() {
   const [meals, setMeals]                   = useState([]);
@@ -30,7 +35,7 @@ export default function MenuPage() {
 
   // 1) HENT ALLE MÅLTIDER FRA BACKEND
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/api/meals`)
+    fetch(`${API_BASE}/api/meals`)
       .then(res => res.json())
       .then(setMeals)
       .catch(console.error);
@@ -105,11 +110,8 @@ export default function MenuPage() {
                       style={{ height: '24rem' }}
                     >
                       <div className="menu-card-img-wrapper">
-                        <img
-                          src={`${process.env.REACT_APP_API_URL}${meal.imagePath}`}
-                          alt={meal.name}
-                          className="w-100 h-100"
-                        />
+                        <ResizedImage src={`${API_BASE}${meal.imagePath}`} alt={meal.name} />
+
                       </div>
                       <BSCard.Body className="h-1/3">
                         <BSCard.Title className="text-black">
@@ -217,13 +219,9 @@ export default function MenuPage() {
               {activeMeal.name} {activeMeal.price} ,-
             </Modal.Title>
           </Modal.Header>
-          <Modal.Body className="bg-white text-black">
+          <Modal.Body className="text-black">
             <div className="modal-img-wrapper mb-4">
-              <img
-                src={`${process.env.REACT_APP_API_URL}${activeMeal.imagePath}`}
-                alt={activeMeal.name}
-                className="w-100"
-              />
+              <ResizedImage src={`${API_BASE}${activeMeal.imagePath}`} alt={activeMeal.name} />
             </div>
             <p>{activeMeal.description}</p>
             <p>

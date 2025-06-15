@@ -1,6 +1,11 @@
 // src/components/Features.jsx
 import { Row, Col, Card as BSCard } from 'react-bootstrap';
 import './Features.css';
+import ResizedImage from '../components/ResizedImage';
+
+const LOCAL_API = 'http://localhost:8080';
+const PROD_API  = 'https://fitbar.onrender.com';
+const API_BASE  = window.location.hostname === 'localhost' ? LOCAL_API : PROD_API;
 
 export default function Features({ cards }) {
   const staticContent = [
@@ -28,10 +33,10 @@ export default function Features({ cards }) {
             style={{ height: '22rem', animationFillMode: 'forwards' }}
           >
             <div className="features-card-img-wrapper">
-              <img
-                src={`${process.env.REACT_APP_API_URL}${meal.imagePath}`}
-                alt={staticContent[idx].title}
-              />
+              <ResizedImage
+         src={`${API_BASE}${meal.imagePath}`}
+         alt={staticContent[idx].title}
+       />
             </div>
           </BSCard>
 

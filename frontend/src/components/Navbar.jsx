@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <>
-      <BSNavbar bg="white" expand="md" sticky="top" className="px-3 shadow-sm">
+      <BSNavbar expand="md" sticky="top" className="px-3 shadow-sm">
         <Container>
          {/* Logo i stedet for tekst */}
           <BSNavbar.Brand>

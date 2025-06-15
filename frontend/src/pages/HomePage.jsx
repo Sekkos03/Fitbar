@@ -6,13 +6,16 @@ import Hero     from '../components/Hero';
 import Features from '../components/Features';
 import './leaf.css';
 
+const LOCAL_API = 'http://localhost:8080';
+const PROD_API  = 'https://fitbar.onrender.com';
+const API_BASE  = window.location.hostname === 'localhost' ? LOCAL_API : PROD_API;
 
 export default function HomePage() {
   const [meals, setMeals] = useState([]);
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/api/meals`)
+    fetch(`${API_BASE}/api/meals`)
       .then(res => {
         if (!res.ok) throw new Error(res.statusText);
         return res.json();

@@ -1,4 +1,7 @@
 /* src/components/Navbar.css */
+.navbar{
+  background-color: #FFF8EC !important;
+}
 
 /* Base pill style with thicker border */
 .navbar .nav-link {

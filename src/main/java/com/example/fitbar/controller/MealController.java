@@ -12,7 +12,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/meals")
-@CrossOrigin(origins = "https://fitbar-wine.vercel.app/")  // adjust if your React runs elsewhere
+@CrossOrigin(origins = {"https://fitbar-wine.vercel.app/",
+"http://localhost:8080"})  // adjust if your React runs elsewhere
 public class MealController {
 
     private final MealService service;
