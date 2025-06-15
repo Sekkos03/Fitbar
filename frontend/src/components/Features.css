@@ -25,3 +25,32 @@
 .fade-in {
   animation: fadeIn 0.8s ease-in-out;
 }
+
+
+/* ─── Features.css ────────────────────────────────────────── */
+
+/* 1) Match bakgrunn på features-cards med sidens kremfarge */
+.features-card,
+.features-card .card-body {
+  background-color: #FFF8EC !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* 2) Wrapper for bilde i features */
+.features-card-img-wrapper {
+  height: 14rem !important;
+  overflow: hidden !important;
+}
+
+/* 3) Sørg for at hele bildet vises uten cropping/scroll */
+.features-card-img-wrapper img {
+  object-fit: contain !important;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 100% !important;
+  display: block;
+  margin: 0 auto;
+}
+

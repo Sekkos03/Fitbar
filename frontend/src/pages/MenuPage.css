@@ -134,3 +134,38 @@
   max-height: 60vh;
   overflow-y: auto;
 }
+
+
+/* ─── MenuPage.css ───────────────────────────────────────── */
+
+/* 1) Bakgrunn på alle meny-cards */
+.menu-page .card,
+.menu-page .card .card-body {
+  background-color: #FFF8EC !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* 2) Wrapper for bilde i meny-cards */
+.menu-card-img-wrapper {
+  height: 14rem !important;
+  overflow: hidden !important;
+}
+
+/* 3) Vis hele bildet uten cropping/scroll */
+.menu-card-img-wrapper img {
+  object-fit: contain !important;
+  width: auto !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: 100% !important;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 4) Unngå scroll i modaler (hvis dere åpner bildene i lightbox) */
+.modal-img-wrapper,
+.modal-img-wrapper img {
+  object-fit: contain !important;
+  overflow: hidden !important;
+}

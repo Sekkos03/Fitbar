@@ -75,3 +75,21 @@
 .home-page-container .card-text {
   color: #000;
 }
+
+
+/* ─── HomePage.css ───────────────────────────────────────── */
+
+/* 1) Bakgrunn på cards i hero/feature-seksjonen */
+.home-page-container .card,
+.home-page-container .card .card-body {
+  background-color: #FFF8EC !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* 2) Unngå scroll/cropping når man åpner større bilde */
+.modal-img-wrapper,
+.modal-img-wrapper img {
+  object-fit: contain !important;
+  overflow: hidden !important;
+}
