@@ -34,14 +34,14 @@ export default function HomePage() {
 
   return (
     <div className="home-page-container flex-grow-1 py-5">
-      <div className='container-with-leaf-decor'>
+     <div className="container-with-leaf-decor">
       <Container as="main">
         <div className="hero-section">
           <Hero />
         </div>
         <Features cards={cards} />
       </Container>
-      </div>
+    </div>
     </div>
   );
 }

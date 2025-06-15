@@ -17,6 +17,7 @@ export default function InfoPage() {
 
   return (
     <div className='infopage-container'>
+      <div className="container-with-leaf-decor">
     <Container as="main" className="py-5 flex-grow-1">
       <div className="text-center mb-5">
         <h1 className="text-3xl font-semibold">Info</h1>
@@ -73,6 +74,7 @@ export default function InfoPage() {
         </Col>
       </Row>
     </Container>
+    </div>
     </div>
   );
 }

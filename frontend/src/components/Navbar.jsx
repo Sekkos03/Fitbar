@@ -62,8 +62,6 @@ export default function Navbar() {
               <p><strong>Telefon</strong><br/>123456789</p>
               <p><strong>Sosiale medier</strong><br/>
                 Instagram: fitbar_fredrikstad<br/>
-                Facebook: fitbar<br/>
-                Snapchat: fitbar
               </p>
             </div>
              {/* Logo i stedet for sirkel */}

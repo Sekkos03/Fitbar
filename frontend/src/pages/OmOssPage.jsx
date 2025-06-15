@@ -8,6 +8,7 @@ import './leaf.css';
 export default function OmOssPage() {
   return (
     <div className="omoss-page-wrapper">
+      <div className="container-with-leaf-decor">
       <Container fluid className="omoss-page-container">
         <h1 className="omoss-title">Om oss</h1>
         <Row className="omoss-intro align-items-center">
@@ -56,6 +57,7 @@ export default function OmOssPage() {
           </Col>
         </Row>
       </Container>
+    </div>
     </div>
   );
 }

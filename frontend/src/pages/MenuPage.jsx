@@ -75,6 +75,7 @@ export default function MenuPage() {
 
   return (
     <div className="menu-page d-flex flex-column min-vh-100">
+      <div className="container-with-leaf-decor">
       <Container as="main" className="py-5 flex-grow position-relative">
         <h1 className="text-3xl font-semibold text-center mb-5 text-black">Meny</h1>
 
@@ -240,6 +241,7 @@ export default function MenuPage() {
           </Modal.Footer>
         </Modal>
       )}
+      </div>
     </div>
   );
 }

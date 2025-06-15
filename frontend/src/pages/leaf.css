@@ -39,3 +39,43 @@
   position: relative;
   z-index: 1;
 }
+
+/* Override transform fra HomePage.css så hele bladet vises */
+.container-with-leaf-decor::before {
+  /* fjerner det som skyver bildet ut av boksen */
+  transform: translate(0, 0) !important;
+  /* gjerne også eksplisitt top/left, hvis du vil være helt sikker */
+  top: 0 !important;
+  left: 0 !important;
+}
+/* ──────────────────────────────────────────────────────────── */
+/* Override slik at bladene kan stikke utenfor containeren */
+.container-with-leaf-decor {
+  overflow: visible !important;
+}
+
+/* Felles justering for begge bladene */
+.container-with-leaf-decor::before,
+.container-with-leaf-decor::after {
+  /* skyv dem ned under navbar (4rem) */
+  top: -4rem !important;
+
+  /* gjør dem større */
+  width: 350px !important;
+  height: 350px !important;
+}
+
+/* Venstre blad langs venstre kant */
+.container-with-leaf-decor::before {
+  left: -10px !important;
+  right: auto;
+}
+
+/* Høyre blad langs høyre kant */
+.container-with-leaf-decor::after {
+  right: -25px !important;
+  left: auto;
+}
+/* ──────────────────────────────────────────────────────────── */
+
+

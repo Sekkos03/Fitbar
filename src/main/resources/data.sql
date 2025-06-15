@@ -1,187 +1,150 @@
-INSERT INTO meals (name, category, price, description, allergies, image_path, nutrition_info) VALUES
-  /* Breakfast/Lunch */
-  ('Super Omelette',     'Breakfast/Lunch', 169.00, 'Egg, kalkun pålegg, cottage cheese, cherrytomater, koriander. Serveres med en liten bolle fersk frukt (mango, druer, kiwi og ananas).', NULL, '/images/breakfast/super_omelette.png', NULL),
-  ('Greek Yoghurt',       'Breakfast/Lunch', 129.00,'Gresk yoghurt (laktosefri) med glutenfri granola, banan, blåbær og jordbær, toppes med honning.', NULL, '/images/breakfast/greek_yoghurt.png', NULL),
-  ('Supercado Toast',      'Breakfast/Lunch',  79.00,'Toastet glutenfri brødskive med most avokado og speilegg. Toppes med kyllingbacon i biter, koriander og chili flakes.', NULL, '/images/breakfast/supercado_toast.png', NULL),
-
-  /* Salad Bowls */
-  ('The Chiken Salad', 'Salad Bowls',     159.00,'Salatmix med grillet kylling, kokt egg, avokado, cherry tomater, agurk og kikerter.', NULL, '/images/salad_bowls/the_chicken_salad.jpeg', NULL),
-  ('Berry Lover', 'Salad Bowls',     169.00,'Salatmix med grillet kylling eller halloumi, grønt eple, jordbær, blåbær, bringebær og granateple.', NULL, '/images/salad_bowls/berry_lover.jpeg', NULL),
+INSERT INTO meals (name, category, price, description, nutrition_info, image_path, allergies) VALUES
+  /* Frokost/Lunsj */
+  ('Super Omelette',       'Frokost/Lunsj', 169.00,
+    'Omelett fylt med kalkunpålegg og cherrytomater, toppet med cottage cheese og koriander. Serveres med frukt og en skive grillet, glutenfritt brød med extra virgin olivenolje og et dryss havsalt.',
+    'Kalorier: 420 kcal; Protein: 36 g; Karbohydrater: 12 g; Fett: 28 g',
+    '/images/frokost_lunsj/super_omelette.png',
+    'Egg,Milk'
+  ),
+  ('Greek Yoghurt',        'Frokost/Lunsj', 149.00,
+    'Laktosefri gresk yoghurt servert med sprø, glutenfri granola, skiver av banan, søte jordbær og saftige blåbær. Toppes med honning og chiafrø for naturlig sødme.',
+    'Kalorier: 390 kcal; Protein: 32 g; Karbohydrater: 40 g; Fett: 14 g',
+    '/images/frokost_lunsj/greek_yoghurt.png',
+    'Milk'
+  ),
+  ('Supercado Toast',       'Frokost/Lunsj', 139.00,
+    'Toastet glutenfritt brød med kremet most avokado, speilegg og sprø kyllingbacon. Toppes med frisk koriander og et hint av chili flakes for ekstra smak.',
+    'Kalorier: 380 kcal; Protein: 30 g; Karbohydrater: 10 g; Fett: 28 g',
+    '/images/frokost_lunsj/supercado_toast.png',
+    'Egg'
+  ),
 
   /* Wraps */
-  ('Salmon Wrap',         'Wraps',          149.00,'Stekt laks, avokado, cherrytomater, rødløk og spinat i glutenfri lefse med agavesenep.', NULL, '/images/wraps/salmon_wrap.PNG', NULL),
-  ('Mediterrano',         'Wraps',          129.00,'Kyllingfilet, avokado, cherrytomater, agurk, laktosefri fetaost og hummus i glutenfri lefse.', NULL, '/images/wraps/mediterrano.PNG', NULL),
-  ('BBQ Cheesesteak',     'Wraps',          189.00,'Biff, cheddar, sjampinjong, paprika og rødløk i glutenfri lefse med BBQ-saus.', NULL, '/images/wraps/bbq_cheesesteak.PNG', NULL),
-
-  /* Protein Smoothie Bowls */
-  ('Super Bowl', 'Protein Smoothie Bowls', 139.00,'Silkemyk proteinsmoothie med iso whey sjokolade, banan, mandelsmør, kakao og valgfri melk-toppet med sprø glutenfri granola, kokosflakes og biter av mørk sjokolade.', 'Melk, Nøtter', '/images/protein_smoothie_bowls/super_bowl.png', NULL),
-  ('Berry Explotion', 'Protein Smoothie Bowls', 139.00,'Frisk og fløyelsmyk proteinsmoothie med iso whey vanilje, bærmix og valgfri melk - toppet med jordbær, blåbær, mango, chiafrø og sprø granola. En fargerik bowl full av energi og smak!', 'Melk', '/images/protein_smoothie_bowls/berry_explotion.png', NULL),
-
-  /* Gainz */
-  ('The Cashew', 'Gainz', 229.00,'Grillet kylling med valgrfri saus. Serveres med basmatris, stekt sopp, løk og squash. Toppes med koriander, chilliflakes, sitron og cashewnøtter.', 'Nøtter', '/images/gainz/chicken_cashew.jpeg', NULL),
-  ('Power Beef', 'Gainz', 249.00,'Stekt biff toppet med valgfri saus. Serveres med basmatiris, avokado, cherrytomater og brokkolini.', NULL, '/images/gainz/power_beef.jpg', NULL),
-  ('Omega Boost', 'Gainz', 249.00,'Laksefilet med ris, mango avokado og cherrytomater - toppet sitronpepper og dill. Frisk, fargerik og full av smak.', NULL, '/images/gainz/omega_boost.jpeg', NULL),
-
+  ('Mediterraneo',          'Wraps',         199.00,
+    'Glutenfri lefse fylt med strimlet kyllingfilet, avokado, cherrytomater, agurk, laktosefri fetaost og hummus. Friske middelhavsvibber – proteinrikt og crave-worthy!',
+    'Kalorier: 550 kcal; Protein: 40 g; Karbohydrater: 18 g; Fett: 29 g',
+    '/images/wraps/mediterraneo.png',
+    'Milk,Sesame'
+  ),
+  ('Salmon Wrap',           'Wraps',         199.00,
+    'Glutenfri lefse fylt med stekt laks, avokado, mango, cherrytomater, rødløk og ruccola. Friskt, sunt og full av feelgood-fett – en wrap som smaker sommer hele året!',
+    'Kalorier: 560 kcal; Protein: 43 g; Karbohydrater: 15 g; Fett: 38 g',
+    '/images/wraps/salmon_wrap.png',
+    'Fish'
+  ),
+  ('BBQ Cheesesteak',       'Wraps',         199.00,
+    'Glutenfri lefse fylt med stekt biffkjøtt, smeltet cheddar, sjampinjong, paprika og rødløk. Saftig, cheesy og proppfull av proteiner.',
+    'Kalorier: 615 kcal; Protein: 51 g; Karbohydrater: 20 g; Fett: 40 g',
+    '/images/wraps/bbq_cheesesteak.png',
+    'Milk'
+  ),
 
   /* Protein Shakes */
-  ('Muscle Freak',        'Protein Shakes',  99.00,'Iso Whey Sjokolade, valgfri melk, banan, avocado, eggehvite, mørk sjokolade 85%, mandelsmør, dadler, linolje. Alternativer: Almond milk, Coconut milk, Oatmilk, Laktosefri melk.', NULL, '/images/protein_shakes/muscle_freak.PNG', NULL),
-  ('The Skinny',          'Protein Shakes',  79.00,'Iso Whey Vanilje, valgfri melk, ananas, jordbær. Alternativer: Almond milk, Coconut milk, Oatmilk, Laktosefri melk.', NULL, '/images/protein_shakes/the_skinny.jpeg', NULL),
-  ('Almond Dream',        'Protein Shakes',  89.00,'Iso Whey Vanilje, valgfri melk, mandelsmør, glutenfri havregryn, vaniljeis, dadler, honning. Alternativer: Almond milk, Coconut milk, Oatmilk, Laktosefri melk.', NULL, '/images/protein_shakes/almond_dream.PNG', NULL),
-  ('Pistachio Explosion', 'Protein Shakes',  89.00,'Iso Whey Pistasj, valgfri melk, banan, kokos, mørk sjokolade 85%, mandelsmør, linolje med pistasjetopping. Alternativer: Almond milk, Coconut milk, Oatmilk, Laktosefri melk.', NULL, '/images/protein_shakes/pistachio_explosion.png', NULL),
+  ('Pistachio Explosion',   'Protein Shakes',119.00,
+    'Proteinshake med Iso Whey Pistasj, banan, mandelsmør, kokos og 85% mørk sjokolade – blendes med valgfri melk. Toppes med knust pistasj. En kremet og luksuriøs energiboost.',
+    'Kalorier: 460 kcal; Protein: 34 g; Karbohydrater: 28 g; Fett: 25 g',
+    '/images/protein_shakes/pistachio_explosion.png',
+    'Milk,Tree nuts'
+  ),
+  ('Muscle Freak',          'Protein Shakes',119.00,
+    'Kraftfull proteinshake med Iso Whey Sjokolade, banan, avocado, eggehvite, mandelsirup, dadler og mørk sjokolade – blendes med valgfri melk og toppes med knust pistasj. Perfekt før eller etter trening.',
+    'Kalorier: 480 kcal; Protein: 35 g; Karbohydrater: 32 g; Fett: 24 g',
+    '/images/protein_shakes/muscle_freak.png',
+    'Milk'
+  ),
+  ('Fitberry',              'Protein Shakes',119.00,
+    'Lett og fruktig proteinshake med Iso Whey Vanilje, bringebær, jordbær og blåbær – blendes med valgfri melk. Perfekt balanse mellom søtt, protein og sommerfølelse i hver slurk.',
+    'Kalorier: 340 kcal; Protein: 30 g; Karbohydrater: 26 g; Fett: 10 g',
+    '/images/protein_shakes/fitberry.png',
+    'Milk'
+  ),
+  ('Dubai Shake',           'Protein Shakes',129.00,
+    'Proteinshake inspirert av viral Dubai-sjokolade. Laget med Iso Whey Sjokolade, dadler, kakao, valgfri melk og pistasjtopping. Toppes med crunchy pistasjkjerner og mørk sjokolade. Dessert goals – uten dårlig samvittighet.',
+    'Kalorier: 450 kcal; Protein: 32 g; Karbohydrater: 30 g; Fett: 22 g',
+    '/images/protein_shakes/dubai_shake.png',
+    'Milk'
+  ),
   
-  /* Protein Iskaffe*/
-  ('Snickers/Protein Latte','Protein Iskaffe',79.00,'Iso Whey Vanilje, Kaffe, hasselnøttsirup, sukkefri sjokoladesirup, sukkerfri karamellsirup, valgfri melk og isbiter. Alternativer: Almond milk, Coconut milk, Oatmilk, Laktosefri melk.', NULL, '/images/protein_iskaffe/snickers_protein_latte.jpeg', NULL),
-  ('Protein Matcha', 'Protein Iskaffe',  79.00,'Iso Whey Vanilje, Matcha, valgfri melk og isbiter. Alternativer: Almond milk, Coconut milk, Oatmilk, Laktosefri melk.', NULL, '/images/protein_iskaffe/protein_matcha.png', NULL),
+
+  /* Protein Iskaffe */
+  ('Snickers Eller Protein Latte','Protein Iskaffe',119.00,
+    'Iskaffe med Snickers Proteinpulver / Iso Whey Vanilje, kaffe og valgfri melk – smaksatt med sukkefri sirup. Serveres kald med isbiter for en perfekt energiboost og forfriskende dessert.',
+    'Kalorier: 300 kcal; Protein: 30 g; Karbohydrater: 20 g; Fett: 12 g',
+    '/images/protein_iskaffe/snickers.png',
+    'Milk,Peanuts'
+  ),
+  ('Protein Matcha',        'Protein Iskaffe',129.00,
+    'Forfriskende matcha-proteinshake med Iso Whey Vanilje, ekte matchapulver og valgfri melk – servert med isbiter. Harmonisk balanse av grønn te og vanilje, perfekt som naturlig energiboost.',
+    'Kalorier: 270 kcal; Protein: 30 g; Karbohydrater: 16 g; Fett: 9 g',
+    '/images/protein_iskaffe/protein_matcha.png',
+    'Milk'
+  ),
+
+  /* Salat Bowls */
+  ('Berry Lover',           'Salat Bowls',   199.00,
+    'Frisk kyllingsalat med jordbær, blåbær, bringebær og grønt eple. Toppet med granateplekjerner og cottage cheese. Søtt, sprø og full av proteiner – perfekt for deg som vil spise digg og smart!',
+    'Kalorier: 520 kcal; Protein: 50 g; Karbohydrater: 20 g; Fett: 24 g',
+    '/images/salat_bowls/berry_lover.png',
+    'Milk'
+  ),
+  ('The Chicken Salad',     'Salat Bowls',   199.00,
+    'Salatmix toppet med grillet kylling, avocado, speilegg, cherrytomater, agurk og fetaost. Full av smak, protein og god energi – enkel, digg og alltid en vinner!',
+    'Kalorier: 565 kcal; Protein: 55 g; Karbohydrater: 16 g; Fett: 30 g',
+    '/images/salat_bowls/the_chicken_salad.png',
+    'Milk'
+  ),
+
+  /* Gainz */
+  ('Chicken Cashew',        'Gainz',         279.00,
+    'Stekt kyllingbryst servert med basmatiris, stekt sopp, løk og squash. Toppes med koriander, chili flakes, sitronskive og cashewnøtter. En digg kombo som gir både power og smak!',
+    'Kalorier: 635 kcal; Protein: 50 g; Karbohydrater: 35 g; Fett: 32 g',
+    '/images/gainz/chicken_cashew.png',
+    'Tree nuts'
+  ),
+  ('Power Beef',            'Gainz',         289.00,
+    'Stekt biff servert med basmatiris, avocado, cherrytomater og brokkolini. En clean mix av protein og grønnsaker – for deg som vil holde det både digg og driftig.',
+    'Kalorier: 655 kcal; Protein: 55 g; Karbohydrater: 25 g; Fett: 38 g',
+    '/images/gainz/power_beef.png',
+    NULL
+  ),
+  ('Omega Boost',           'Gainz',         279.00,
+    'Stekt laksefilet servert med basmatiris, mango, avocado og cherrytomater. Toppes med sitronpepper, dill og en sitronskive. Friskt, fargerikt og full av feelgood-omega!',
+    'Kalorier: 590 kcal; Protein: 44 g; Karbohydrater: 22 g; Fett: 36 g',
+    '/images/gainz/omega_boost.png',
+    'Fish'
+  ),
+
+  /* Protein Smoothie Bowls */
+  ('Super Bowl',            'Protein Smoothie Bowls',199.00,
+    'Proteinsmoothie med Iso Whey Sjokolade, banan, mandelsmør, kakao og valgfri melk – toppet med glutenfri granola, kokosflakes og biter av mørk sjokolade. Smaker dessert – funker som fuel!',
+    'Kalorier: 420 kcal; Protein: 32 g; Karbohydrater: 30 g; Fett: 20 g',
+    '/images/protein_smoothie_bowls/super_bowl.png',
+    'Milk'
+  ),
+  ('Berry Explosion',       'Protein Smoothie Bowls',199.00,
+    'Proteinsmoothie med Iso Whey Vanilje, bærmix og valgfri melk – toppet med jordbær, blåbær, bringebær, chiafrø og granola. Frisk, fyldig og full av protein – perfekt før eller etter økta!',
+    'Kalorier: 390 kcal; Protein: 30 g; Karbohydrater: 28 g; Fett: 18 g',
+    '/images/protein_smoothie_bowls/berry_explosion.png',
+    'Milk'
+  ),
+  ('Acai Boost',            'Protein Smoothie Bowls',199.00,
+    'Protein Açai-bowl med Iso Whey Vanilje, banan, blåbær og valgfri melk. Toppet med glutenfri granola, kokosflakes, bananskiver, peanøttsmør og blåbær. Perfekt som frokost, lunsj eller snack!',
+    'Kalorier: 580 kcal; Protein: 15 g; Karbohydrater: 70 g; Fett: 25 g',
+    '/images/protein_smoothie_bowls/acai_boost.png',
+    'Milk,Peanuts'
+  ),
 
   /* Wellness Shots */
-  ('Hotshot',             'Wellness Shots',  39.00,'Sitron og ingefær, toppet med cayennepepper.', NULL, '/images/wellness_shots/hotshot.png', NULL),
-  ('Supershot',           'Wellness Shots',  39.00,'Gurkemeie, ingefær, organisk honning og eplesidereddik, toppet med svart pepper.', NULL, '/images/wellness_shots/supershot.png', NULL)
-
+  ('Supershot',             'Wellness Shots', 39.00,
+    'Gylden shot med ingefær, økologisk honning og eplesidereddik – toppet med et hint av svart pepper for optimal effekt. En kraftfull og balansert boost for kropp og immunforsvar.',
+    NULL,
+    '/images/wellness_shots/supershot.png',
+    NULL
+  ),
+  ('Hotshot',               'Wellness Shots', 39.00,
+    'Frisk og kraftfull shot med presset sitron og ingefær – toppet med et kick av cayennepepper. En intens liten boost for immunforsvaret og energinivået.',
+    NULL,
+    '/images/wellness_shots/hotshot.png',
+    NULL
+  )
 ;
-
-UPDATE meals
-SET
-  allergies       = 'Egg, Melk',
-  nutrition_info  = 'Proteiner: 35.5 g; Kalorier: 420 kcal; Fett: 28 g; Karbohydrater: 12 g'
-WHERE name = 'Super Omelette';
-
--- 2. Green Veggie Omelette
-UPDATE meals
-SET
-  allergies       = 'Egg, Melk',
-  nutrition_info  = 'Proteiner: 36.5 g; Kalorier: 440 kcal; Fett: 30 g; Karbohydrater: 14 g'
-WHERE name = 'Green Veggie Omelette';
-
--- 3. Greek Yoghurt
-UPDATE meals
-SET
-  allergies       = 'Melk',
-  nutrition_info  = 'Proteiner: 32 g; Kalorier: 390 kcal; Fett: 14 g; Karbohydrater: 40 g'
-WHERE name = 'Greek Yoghurt';
-
--- 4. Supercado Toast
-UPDATE meals
-SET
-  allergies       = 'Egg',
-  nutrition_info  = 'Proteiner: 30 g; Kalorier: 380 kcal; Fett: 28 g; Karbohydrater: 10 g'
-WHERE name = 'Supercado Toast';
-
--- 5. The Salad
-UPDATE meals
-SET
-  allergies       = 'Egg, Melk',
-  nutrition_info  = 'Proteiner: 55 g; Kalorier: 565 kcal; Fett: 30 g; Karbohydrater: 16 g'
-WHERE name = 'The Salad';
-
--- 6. Berry Lover
-UPDATE meals
-SET
-  allergies       = 'Melk',
-  nutrition_info  = 'Proteiner: 50 g; Kalorier: 520 kcal; Fett: 24 g; Karbohydrater: 20 g'
-WHERE name = 'Berry Lover';
-
--- 7. Vegan Wrap
-UPDATE meals
-SET
-  allergies       = 'Melk',
-  nutrition_info  = 'Proteiner: 36 g; Kalorier: 510 kcal; Fett: 36 g; Karbohydrater: 18 g'
-WHERE name = 'Vegan Wrap';
-
--- 8. Salmon Wrap
-UPDATE meals
-SET
-  allergies       = 'Fisk',
-  nutrition_info  = 'Proteiner: 43 g; Kalorier: 560 kcal; Fett: 38 g; Karbohydrater: 15 g'
-WHERE name = 'Salmon Wrap';
-
--- 9. Mediterrano
-UPDATE meals
-SET
-  allergies       = 'Melk, Sesam',
-  nutrition_info  = 'Proteiner: 46 g; Kalorier: 550 kcal; Fett: 29 g; Karbohydrater: 18 g'
-WHERE name = 'Mediterrano';
-
--- 10. BBQ Cheesesteak
-UPDATE meals
-SET
-  allergies       = 'Melk',
-  nutrition_info  = 'Proteiner: 51 g; Kalorier: 615 kcal; Fett: 40 g; Karbohydrater: 20 g'
-WHERE name = 'BBQ Cheesesteak';
-
--- 11. Chicken Cashew
-UPDATE meals
-SET
-  allergies       = 'Nøtter',
-  nutrition_info  = 'Proteiner: 50 g; Kalorier: 635 kcal; Fett: 32 g; Karbohydrater: 35 g'
-WHERE name = 'Chicken Cashew';
-
--- 12. Beef  (Power Beef)
-UPDATE meals
-SET
-  allergies       = NULL,
-  nutrition_info  = 'Proteiner: 55 g; Kalorier: 655 kcal; Fett: 38 g; Karbohydrater: 25 g'
-WHERE name = 'Beef';
-
--- 13. The Omega  (Omega Boost)
-UPDATE meals
-SET
-  allergies       = 'Fisk, Sesam',
-  nutrition_info  = 'Proteiner: 44 g; Kalorier: 590 kcal; Fett: 36 g; Karbohydrater: 22 g'
-WHERE name = 'The Omega';
-
--- 14. Vegan Power
---    (Ikke oppgitt i PDF-fil; lar nutrition_info stå tom eller settes ved senere oppdatering.)
-UPDATE meals
-SET
-  allergies       = NULL,
-  nutrition_info  = NULL
-WHERE name = 'Vegan Power';
-
--- 15. Muscle Freak
-UPDATE meals
-SET
-  allergies       = 'Melk, Nøtter',
-  nutrition_info  = 'Proteiner: 35 g; Kalorier: 480 kcal; Fett: 24 g; Karbohydrater: 32 g'
-WHERE name = 'Muscle Freak';
-
--- 16. The Skinny
-UPDATE meals
-SET
-  allergies       = 'Melk',
-  nutrition_info  = 'Proteiner: 30 g; Kalorier: 340 kcal; Fett: 10 g; Karbohydrater: 26 g'
-WHERE name = 'The Skinny';
-
--- 17. Almond Dream
-UPDATE meals
-SET
-  allergies       = 'Melk, Nøtter',
-  nutrition_info  = 'Proteiner: 32 g; Kalorier: 450 kcal; Fett: 22 g; Karbohydrater: 30 g'
-WHERE name = 'Almond Dream';
-
--- 18. Pistachio Explosion
-UPDATE meals
-SET
-  allergies       = 'Melk, Nøtter',
-  nutrition_info  = 'Proteiner: 34 g; Kalorier: 460 kcal; Fett: 25 g; Karbohydrater: 28 g'
-WHERE name = 'Pistachio Explosion';
-
--- 19. Protein Iskaffe (Snickers)
-UPDATE meals
-SET
-  allergies       = 'Melk',
-  nutrition_info  = 'Proteiner: 30 g; Kalorier: 300 kcal; Fett: 12 g; Karbohydrater: 20 g'
-WHERE name = 'Protein Iskaffe (Snickers)';
-
--- 20. Vanilla
-UPDATE meals
-SET
-  allergies       = 'Melk',
-  nutrition_info  = 'Proteiner: 30 g; Kalorier: 280 kcal; Fett: 10 g; Karbohydrater: 18 g'
-WHERE name = 'Vanilla';
-
--- 21. Protein Matcha
-UPDATE meals
-SET
-  allergies       = 'Melk',
-  nutrition_info  = 'Proteiner: 30 g; Kalorier: 270 kcal; Fett: 9 g; Karbohydrater: 16 g'
-WHERE name = 'Protein Matcha';
