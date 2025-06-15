@@ -12,8 +12,8 @@
   position: absolute;
   top: 0;               /* flush mot toppen */
   left: 0;              /* flush mot venstre vegg */
-  width: 250px;         /* større */
-  height: 250px;        /* større */
+  width: 350px;         /* større */
+  height: 350px;        /* større */
   background: url('../assets/leaf-top-left.png') no-repeat left top;
   background-size: contain;
   pointer-events: none;
@@ -61,8 +61,8 @@
   top: -4rem !important;
 
   /* gjør dem større */
-  width: 350px !important;
-  height: 350px !important;
+  width: 450px !important;
+  height: 450px !important;
 }
 
 /* Venstre blad langs venstre kant */
