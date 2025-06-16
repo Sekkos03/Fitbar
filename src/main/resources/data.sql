@@ -43,13 +43,13 @@ INSERT INTO meals (name, category, price, description, nutrition_info, image_pat
   ('Pistachio Explosion',   'Protein Shakes',119.00,
     'Proteinshake med Iso Whey Pistasj, banan, mandelsmør, kokos og 85% mørk sjokolade – blendes med valgfri melk. Toppes med knust pistasj. En kremet og luksuriøs energiboost.',
     'Kalorier: 460 kcal; Protein: 34 g; Karbohydrater: 28 g; Fett: 25 g',
-    '/images/protein_shakes/pistachio_explosion.png',
+    '/images/protein_shakes/pistachio_explosion.PNG',
     'Milk,Tree nuts'
   ),
   ('Muscle Freak',          'Protein Shakes',119.00,
     'Kraftfull proteinshake med Iso Whey Sjokolade, banan, avocado, eggehvite, mandelsirup, dadler og mørk sjokolade – blendes med valgfri melk og toppes med knust pistasj. Perfekt før eller etter trening.',
     'Kalorier: 480 kcal; Protein: 35 g; Karbohydrater: 32 g; Fett: 24 g',
-    '/images/protein_shakes/muscle_freak.png',
+    '/images/protein_shakes/muscle_freak.PNG',
     'Milk'
   ),
   ('Fitberry',              'Protein Shakes',119.00,
@@ -138,13 +138,13 @@ INSERT INTO meals (name, category, price, description, nutrition_info, image_pat
   ('Supershot',             'Wellness Shots', 39.00,
     'Gylden shot med ingefær, økologisk honning og eplesidereddik – toppet med et hint av svart pepper for optimal effekt. En kraftfull og balansert boost for kropp og immunforsvar.',
     NULL,
-    '/images/wellness_shots/supershot.png',
+    '/images/wellness_shots/supershot.PNG',
     NULL
   ),
   ('Hotshot',               'Wellness Shots', 39.00,
     'Frisk og kraftfull shot med presset sitron og ingefær – toppet med et kick av cayennepepper. En intens liten boost for immunforsvaret og energinivået.',
     NULL,
-    '/images/wellness_shots/hotshot.png',
+    '/images/wellness_shots/hotshot.PNG',
     NULL
   )
 ;
