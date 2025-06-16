@@ -1,0 +1,33 @@
+/* src/components/Features.css */
+
+/* Reserve top 2/3 of the card for the image */
+.features-card-img-wrapper {
+  width: 100%;
+  /* remove the fixed height so the container can grow */
+  /* height: 22rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* keeps any slight overflow tidy */
+}
+
+/* 2) Let the image scale down to fit, without cropping */
+.features-card-img-wrapper img {
+  max-width: 100%;
+  max-height: 22rem;      /* optional—limits how tall the img can get */
+  width: auto;
+  height: auto;
+  object-fit: contain;     /* show the whole image, letterboxed if needed */
+}
+/* Keyframes for fading in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* Apply fadeIn over 0.8s with a little easing */
+.fade-in {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+
