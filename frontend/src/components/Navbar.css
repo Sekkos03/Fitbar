@@ -11,7 +11,7 @@
   padding: 0.25rem 1.5rem;
   border: 2px solid #000;
   border-radius: 50px;
-  background-color: #fff;
+  background-color: #FFF8EC;
   color: #000 !important;
   margin-right: 0.5rem;
   text-decoration: none;
@@ -93,4 +93,52 @@
 /* Ved hover (valgfritt) kan du også animerere ytterligere: */
 .navbar-logo:hover {
   transform: scale(1.4);
+}
+
+@media (max-width: 768px) {
+  /* Juster nav-linker for mobil */
+  .navbar .nav-link {
+    padding: 0.4rem 1rem;
+    font-size: 0.95rem;
+    margin: 0.25rem 0;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: none;
+    border: 1px solid #ccc;
+  }
+
+  .navbar .nav-link:hover {
+    background-color: #e9e1d2;
+    transform: none;
+  }
+
+  .navbar .nav-link.active {
+    background-color: #000;
+    color: #fff !important;
+  }
+
+  /* Kontakt-knappen under lenkene og full bredde */
+  .navbar .btn-outline-dark {
+    margin-top: 0.5rem;
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+  }
+
+  .navbar .btn-outline-dark:hover {
+    background-color: #000;
+    color: #fff;
+    transform: none;
+  }
+
+  .navbar-logo {
+    transform: scale(1.1);
+    height: 50px;
+  }
+
+  .navbar-collapse {
+    text-align: center;
+  }
 }

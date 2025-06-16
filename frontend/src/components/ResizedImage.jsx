@@ -4,8 +4,8 @@ import React from 'react';
 export default function ResizedImage({
   src,
   alt,
-  width = 600,
-  height = 600,
+  width = 400,
+  height = 400,
   style,
   ...props
 }) {

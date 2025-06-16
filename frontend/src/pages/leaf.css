@@ -79,3 +79,19 @@
 /* ──────────────────────────────────────────────────────────── */
 
 
+@media (max-width: 768px) {
+  .container-with-leaf-decor::before,
+  .container-with-leaf-decor::after {
+    width: 150px !important;
+    height: 150px !important;
+    top: -3rem !important;
+  }
+
+  .container-with-leaf-decor::before {
+    left: -5px !important;
+  }
+
+  .container-with-leaf-decor::after {
+    right: -10px !important;
+  }
+}

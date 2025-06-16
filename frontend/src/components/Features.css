@@ -9,15 +9,30 @@
   justify-content: center;
   align-items: center;
   overflow: hidden; /* keeps any slight overflow tidy */
+  height: 25rem;  /* Øk høyden så bildet ikke virker trangt */
+  margin-bottom: 1rem;
 }
 
 /* 2) Let the image scale down to fit, without cropping */
 .features-card-img-wrapper img {
   max-width: 100%;
-  max-height: 22rem;      /* optional—limits how tall the img can get */
+  max-height: 45rem;      /* optional—limits how tall the img can get */
   width: auto;
   height: auto;
   object-fit: contain;     /* show the whole image, letterboxed if needed */
+  border: 4px solid #000;
+  border-radius: 50%;
+  padding: 0.8rem;
+  background-color:  #FFF8EC !important;
+  width: 20rem;          /* Økt størrelse */
+  height: 20rem;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Valgfri: litt skygge */
+}
+
+.features-card-img-wrapper picture img {
+  border: 3px solid #000;
+  border-radius: 50%;
 }
 /* Keyframes for fading in */
 @keyframes fadeIn {

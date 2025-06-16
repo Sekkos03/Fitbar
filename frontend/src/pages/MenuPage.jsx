@@ -87,8 +87,7 @@ export default function MenuPage() {
         {/* Filtrer‐knapp */}
         <Button
   variant="dark"
-  className="rounded-pill position-absolute filter-btn"
-  style={{ top: '9.3rem', right: '1.5rem' }}
+  className="rounded-pill position-absolute filter-btn filter-btn-pos"
   onClick={() => setShowFilter(true)}
 >
   Filtrer

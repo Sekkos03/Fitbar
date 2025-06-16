@@ -22,9 +22,10 @@ export default function Navbar() {
       <BSNavbar expand="md" sticky="top" className="px-3 shadow-sm">
         <Container>
          {/* Logo i stedet for tekst */}
-          <BSNavbar.Brand>
+          <BSNavbar.Brand as={NavLink} to="/">
             <img src={logo} alt="Fitbar" className="navbar-logo" />
           </BSNavbar.Brand>
+
           <BSNavbar.Toggle />
           <BSNavbar.Collapse className="justify-content-center">
             <Nav className="mx-auto">

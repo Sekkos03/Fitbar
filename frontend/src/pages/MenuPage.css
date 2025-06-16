@@ -187,3 +187,15 @@
 .modal-footer {
   background-color: #FFF8EC !important;
 }
+
+.filter-btn-pos {
+  top: 9.3rem;
+  right: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .filter-btn-pos {
+    top: 8rem !important;
+    right: 1rem !important;
+  }
+}
