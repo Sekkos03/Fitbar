@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Fitbar",
+  "name": "Fitbar Healthy",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,15 +8,27 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+        "src":"/android-chrome-192x192.png",
+        "sizes":"192x192",
+        "type":"image/png"
+        },
+        {
+      "src": "apple-touch-icon.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "180x180",
+      "purpose": "any"
     },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
+      {
+      "src": "apple-touch-icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+        {
+            "src":"/android-chrome-512x512.png",
+            "sizes":"512x512",
+            "type":"image/png"
+        }
   ],
   "start_url": ".",
   "display": "standalone",
