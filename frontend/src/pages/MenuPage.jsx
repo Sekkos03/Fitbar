@@ -116,8 +116,14 @@ export default function MenuPage() {
                         <BSCard.Title className="text-black">
                           {meal.name} {meal.price} ,-
                         </BSCard.Title>
-                        <BSCard.Text className="text-black small">
+                        <BSCard.Text className="text-black small mb-1">
                           {meal.description}
+                        </BSCard.Text>
+                        <BSCard.Text className="text-black small mb-1">
+                          <strong>Macro:</strong> {meal.nutritionInfo || 'Ikke oppgitt'}
+                        </BSCard.Text>
+                        <BSCard.Text className="text-black small">
+                          <strong>Allergener:</strong> {meal.allergies || 'Ingen'}
                         </BSCard.Text>
                       </BSCard.Body>
                     </BSCard>

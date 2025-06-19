@@ -1,6 +1,6 @@
 // InfoPage.jsx
-import React from 'react';
-import { Container, Row, Col, Form } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import './InfoPage.css';
 import './leaf.css';
 
@@ -14,6 +14,29 @@ export default function InfoPage() {
     ['Lørdag',  '12:00 – 17:00'],
     ['Søndag',  'Stengt'],
   ];
+
+   const [message, setMessage] = useState('');
+  const [status, setStatus] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch('http://localhost:8080/api/info', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message }),
+      });
+      if (res.ok) {
+        setStatus('success');
+        setMessage('');
+      } else {
+        setStatus('error');
+      }
+    } catch (err) {
+      console.error(err);
+      setStatus('error');
+    }
+  };
 
   return (
     <div className='infopage-container'>
@@ -61,16 +84,24 @@ export default function InfoPage() {
       </div>
       <Row className="justify-content-center mb-5">
         <Col md={8}>
-          <Form>
-            <Form.Group controlId="forslag">
-              <Form.Control
-                as="textarea"
-                rows={5}
-                placeholder="Skriv dine forslag eller spørsmål her…"
-                className="contact-box"
-              />
-            </Form.Group>
-          </Form>
+            <Form onSubmit={handleSubmit}>
+  <Form.Group controlId="forslag">
+    <Form.Control
+      as="textarea"
+      rows={5}
+      placeholder="Skriv dine forslag eller spørsmål her…"
+      className="contact-box"
+      value={message}
+      onChange={(e) => setMessage(e.target.value)}
+    />
+  </Form.Group>
+  <div className="text-end mt-3">
+    <Button variant="dark" type="submit">Send</Button>
+  </div>
+</Form>
+{status === 'success' && <Alert variant="success" className="mt-3">Meldingen ble sendt!</Alert>}
+{status === 'error' && <Alert variant="danger" className="mt-3">Noe gikk galt. Prøv igjen.</Alert>}
+
         </Col>
       </Row>
     </Container>
