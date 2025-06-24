@@ -30,7 +30,7 @@ export default function Features({ cards }) {
           <BSCard 
           key={meal.id}
             className="w-100 rounded-4 overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105 fade-in"
-            style={{ height: '22rem', animationFillMode: 'forwards' }}
+            style={{ height: '21.7rem', animationFillMode: 'forwards' }}
           >
             <div className="features-card-img-wrapper">
               <ResizedImage
