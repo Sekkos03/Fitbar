@@ -8,36 +8,22 @@ export default function Footer() {
     <footer className="bg-black text-white py-5 shadow-glow-top">
       <Container>
         <Row className="text-center align-items-start">
-          {/* Left column */}
-          <Col md={4}>
-            <p className="mb-1 fw-bold">Stephan Kovac</p>
-            <p className="small mb-1">Daglig leder</p>
-            <p className="small">Tlf: +47 455 10 294</p>
-          </Col>
 
           {/* Center column */}
-          <Col md={4}>
-            <p className="mb-3">E-post: <a href="mailto:stephan@fitbar.no" className="text-white text-decoration-underline">stephan@fitbar.no</a></p>
-
+          <Col md={14}>
             <div className="d-flex justify-content-center align-items-center mb-2">
               <a href="https://www.instagram.com/fitbar_fredrikstad/" className="text-white me-3">
-                <FaInstagram size={28} />
+                <FaInstagram size={58} />
               </a>
-              <span className="h4 mb-0">Fitbar</span>
+              <span className="h1 mb-2">Fitbar</span>
               <a href="#" className="text-white ms-3">
-                <FaFacebook size={28} />
+                <FaFacebook size={58} />
               </a>
             </div>
 
             <div className="small">© Created by Sekou Kosiah</div>
           </Col>
 
-          {/* Right column */}
-          <Col md={4}>
-            <p className="mb-1 fw-bold">Josef Missoum</p>
-            <p className="small mb-1">Salgsjef</p>
-            <p className="small">Tlf: +47 929 70 458</p>
-          </Col>
         </Row>
       </Container>
     </footer>

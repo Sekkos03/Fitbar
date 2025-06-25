@@ -59,7 +59,6 @@ export default function Navbar() {
         <Modal.Body>
           <div className="contact-content">
             <div className="contact-info">
-              <p><strong>E-Mail</strong><br/>fitbar@vaerste.no</p>
               <p><strong>Telefon</strong><br/>123456789</p>
               <p><strong>Sosiale medier</strong><br/>
                 Instagram: fitbar_fredrikstad<br/>

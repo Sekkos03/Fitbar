@@ -29,7 +29,7 @@ public class SecurityConfig {
   @Bean
   CorsConfigurationSource corsConfigurationSource() {
     CorsConfiguration config = new CorsConfiguration();
-    config.setAllowedOrigins(List.of("http://localhost:3000", "http://localhost:8080","ttps://fitbar-wine.vercel.app"));
+    config.setAllowedOrigins(List.of("http://localhost:3000", "http://localhost:8080","https://fitbar.no"));
     config.setAllowedMethods(List.of("GET","POST","OPTIONS"));
     config.setAllowedHeaders(List.of("*"));
     UrlBasedCorsConfigurationSource src = new UrlBasedCorsConfigurationSource();

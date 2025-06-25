@@ -8,7 +8,7 @@ import com.example.fitbar.service.MessageService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 
-@RestController
+@RestController 
 @CrossOrigin(origins = "http://localhost:3000")
 @RequestMapping("/api/info")
 public class MessageController {
