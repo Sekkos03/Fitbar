@@ -19,6 +19,6 @@ public class MessageService {
         // 2) send e-post
         String subject = "Ny henvendelse fra Fitbar";
         String body = msg.getMessage();
-        mailService.sendTo("JosefMissoum@gmail.com", subject, body);
+        mailService.sendTo("josefmissoum@gmail.com", subject, body);
     }
 }
