@@ -1,6 +1,7 @@
 /* src/components/Navbar.css */
 .navbar{
   background-color: #FFF8EC !important;
+  height: 80px;
 }
 
 /* Base pill style with thicker border */
@@ -82,7 +83,7 @@
 }
 
 .navbar-logo {
-  height: 60px;           /* beholder samme layout-høyde */
+  height: 70px;           /* beholder samme layout-høyde */
   width: auto;
   transform: scale(1.3);  /* gjør logoen 30% større */
   transform-origin: left center; /* skaler ut fra venstre midtpunkt */
