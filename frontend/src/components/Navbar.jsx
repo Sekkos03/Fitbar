@@ -59,7 +59,7 @@ export default function Navbar() {
         <Modal.Body>
           <div className="contact-content">
             <div className="contact-info">
-              <p><strong>Telefon</strong><br/>123456789</p>
+              <p><strong>Telefon</strong><br/>929 70 458</p>
               <p><strong>Sosiale medier</strong><br/>
                 Instagram: fitbar_fredrikstad<br/>
               </p>
