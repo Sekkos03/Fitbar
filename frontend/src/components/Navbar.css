@@ -44,36 +44,38 @@
   transform: scale(1.05);
   transition: transform 0.2s ease;
 }
-.contact-content {
+/* ---------- Bestill nå (order) styles ---------- */
+
+.order-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  height: 170px;
+  padding: 1rem 0;
 }
 
-.contact-info {
-  flex: 1;
-  margin-right: 1rem;
-}
-
-/* src/components/Navbar.css */
-
-.contact-circle {
-  width: 250px;
-  height: 250px;
+.order-circle {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   overflow: hidden;
-  background: none;    /* fjern svart bakgrunn */
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: center;
+  background: #FFF8EC;    /* same as navbar bg */
+  border: 2px solid #000; /* pill‐style border */
+  transition: transform 0.2s ease;
 }
 
-.contact-circle .contact-logo {
+.order-circle:hover {
+  transform: scale(1.1);
+}
+
+.order-circle img {
   max-width: 80%;
   max-height: 80%;
   object-fit: contain;
 }
+
 
 /* src/components/Navbar.css */
 

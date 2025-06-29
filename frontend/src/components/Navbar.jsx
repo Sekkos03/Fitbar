@@ -4,6 +4,9 @@ import './Navbar.css';  // ← import the CSS
 import { Navbar as BSNavbar, Nav, Button, Container, Modal } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/fitbar_logo.png';
+import foodoraLogo from '../assets/Foodora_Logo.png';
+import favritLogo  from '../assets/Favrit_Logo.png';
+import woltLogo    from '../assets/Wolt_Logo.png';
 
 const links = [
   { label: 'Forsiden', to: '/' },
@@ -45,7 +48,7 @@ export default function Navbar() {
               className="rounded-pill nav-btn"
               onClick={open}
             >
-              Kontakt
+              Bestill nå
             </Button>
           </BSNavbar.Collapse>
         </Container>
@@ -54,24 +57,24 @@ export default function Navbar() {
       {/* Kontakt-modal */}
       <Modal show={showContact} onHide={close} centered>
         <Modal.Header closeButton>
-          <Modal.Title className="text-center w-100">Kontakt oss ved</Modal.Title>
+          <Modal.Title className="text-center w-100">Bestill nå</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div className="contact-content">
-            <div className="contact-info">
-              <p><strong>Telefon</strong><br/>929 70 458</p>
-              <p><strong>Sosiale medier</strong><br/>
-                Instagram: fitbar_fredrikstad<br/>
-              </p>
-            </div>
-             {/* Logo i stedet for sirkel */}
-              <div className="contact-circle">
-                <img 
-                  src={logo} 
-                  alt="Fitbar logo" 
-                  className="contact-logo" 
-                />
-              </div>
+          <div className="order-content">
+            {/* Foodora: deep link into app, fallback to website */}
+              <NavLink to="https://www.foodora.no/restaurant/wr3q/fitbar" className="order-circle">
+              <img src={foodoraLogo} alt="Foodora" />         
+            </NavLink>
+            {/* Favrit: your own menu page */}
+            <NavLink to="/bestill-favrit" className="order-circle">
+              <img src={favritLogo} alt="Favrit" />
+            </NavLink>
+
+            {/* Wolt: deep link into app, fallback to website */}
+            <NavLink to="https://wolt.com/nb/nor/fredrikstad/restaurant/fitbar-fredrikstad?srsltid=AfmBOoqkjOEoFC2N5h_n7gjI7N0pjXYbv9q8kHKsfeCS9v1pk_FCvzbk" className="order-circle">
+              <img src={woltLogo} alt="Wolt" />
+            </NavLink>
+          
           </div>
         </Modal.Body>
         <Modal.Footer>
