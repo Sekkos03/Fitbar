@@ -66,7 +66,7 @@ export default function Navbar() {
               <img src={foodoraLogo} alt="Foodora" />         
             </NavLink>
             {/* Favrit: your own menu page */}
-            <NavLink to="/bestill-favrit" className="order-circle">
+            <NavLink to="https://favrit.com/group/81251/LjBLNeZJR7A" className="order-circle">
               <img src={favritLogo} alt="Favrit" />
             </NavLink>
 
