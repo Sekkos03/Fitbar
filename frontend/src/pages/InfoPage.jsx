@@ -5,13 +5,13 @@ import './leaf.css';
 
 export default function InfoPage() {
   const openingHours = [
-    ['Mandag',  '10:00 – 20:00'],
-    ['Tirsdag', '10:00 – 20:00'],
-    ['Onsdag',  '10:00 – 20:00'],
-    ['Torsdag', '10:00 – 20:00'],
-    ['Fredag',  '10:00 – 20:00'],
-    ['Lørdag',  '12:00 – 17:00'],
-    ['Søndag',  'Stengt'],
+    ['Mandag',  '11:00 – 22:00'],
+    ['Tirsdag', '11:00 – 22:00'],
+    ['Onsdag',  '11:00 – 22:00'],
+    ['Torsdag', '11:00 – 22:00'],
+    ['Fredag',  '11:00 – 00:00'],
+    ['Lørdag',  '11:00 – 00:00'],
+    ['Søndag',  '13:00 - 19:00'],
   ];
 
   const [message, setMessage] = useState('');
@@ -43,7 +43,7 @@ export default function InfoPage() {
       <div className="container-with-leaf-decor">
         <Container as="main" className="py-5 flex-grow-1">
           <div className="text-center mb-5">
-            <h1 className="text-3xl font-semibold">Info</h1>
+            <h1 className="page-title">Info</h1>
           </div>
 
           <Row className="mb-5 items-start">

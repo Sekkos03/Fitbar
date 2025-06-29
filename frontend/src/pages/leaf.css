@@ -2,96 +2,49 @@
 
 .container-with-leaf-decor {
   position: relative;
-  /* fjern padding-top så bladene kan sitte helt oppe */
-  padding-top: 0;
+  padding-top: 0;            /* allow leaves to sit flush at top */
+  overflow: visible;         /* let leaves overflow container */
 }
 
-/* Venstre blad */
-.container-with-leaf-decor::before {
-  content: "";
-  position: absolute;
-  top: 0;               /* flush mot toppen */
-  left: 0;              /* flush mot venstre vegg */
-  width: 350px;         /* større */
-  height: 350px;        /* større */
-  background: url('../assets/leaf-top-left.png') no-repeat left top;
-  background-size: contain;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Høyre blad */
+/* Decor leaves */
+.container-with-leaf-decor::before,
 .container-with-leaf-decor::after {
   content: "";
   position: absolute;
-  top: 0;               /* flush mot toppen */
-  right: 0;             /* flush mot høyre vegg */
-  width: 250px;         /* samme størrelse */
-  height: 250px;
-  background: url('../assets/leaf-top-right.png') no-repeat right top;
+  top: -4rem;                /* raise leaves above content */
+  width: clamp(100px, 20vw, 450px);   /* fluid width between 100px and 450px */
+  aspect-ratio: 1 / 1;       /* maintain square shape */
+  background-repeat: no-repeat;
   background-size: contain;
   pointer-events: none;
   z-index: 0;
 }
 
-/* Sørg for at innholdet ligger over dekorasjonen */
+/* Left leaf */
+.container-with-leaf-decor::before {
+  left: -10px;
+  background-image: url('../assets/leaf-top-left.png');
+  background-position: left top;
+}
+
+/* Right leaf */
+.container-with-leaf-decor::after {
+  right: -25px;
+  background-image: url('../assets/leaf-top-right.png');
+  background-position: right top;
+}
+
+/* Ensure page content sits above leaves */
 .container-with-leaf-decor > * {
   position: relative;
   z-index: 1;
 }
 
-/* Override transform fra HomePage.css så hele bladet vises */
-.container-with-leaf-decor::before {
-  /* fjerner det som skyver bildet ut av boksen */
-  transform: translate(0, 0) !important;
-  /* gjerne også eksplisitt top/left, hvis du vil være helt sikker */
-  top: 0 !important;
-  left: 0 !important;
-}
-/* ──────────────────────────────────────────────────────────── */
-/* Override slik at bladene kan stikke utenfor containeren */
-.container-with-leaf-decor {
-  overflow: visible !important;
-}
-
-/* Felles justering for begge bladene */
-.container-with-leaf-decor::before,
-.container-with-leaf-decor::after {
-  /* skyv dem ned under navbar (4rem) */
-  top: -4rem !important;
-
-  /* gjør dem større */
-  width: 450px !important;
-  height: 450px !important;
-}
-
-/* Venstre blad langs venstre kant */
-.container-with-leaf-decor::before {
-  left: -10px !important;
-  right: auto;
-}
-
-/* Høyre blad langs høyre kant */
-.container-with-leaf-decor::after {
-  right: -25px !important;
-  left: auto;
-}
-/* ──────────────────────────────────────────────────────────── */
-
-
-@media (max-width: 768px) {
+/* Optional: further scale down on smallest screens */
+@media (max-width: 576px) {
   .container-with-leaf-decor::before,
   .container-with-leaf-decor::after {
-    width: 150px !important;
-    height: 150px !important;
-    top: -3rem !important;
-  }
-
-  .container-with-leaf-decor::before {
-    left: -5px !important;
-  }
-
-  .container-with-leaf-decor::after {
-    right: -10px !important;
+    width: clamp(80px, 25vw, 200px);
+    top: -3rem;
   }
 }

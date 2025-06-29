@@ -82,7 +82,7 @@ export default function MenuPage() {
     <div className="menu-page d-flex flex-column min-vh-100">
       <div className="container-with-leaf-decor">
       <Container as="main" className="py-5 flex-grow position-relative">
-        <h1 className="text-3xl font-semibold text-center mb-5 text-black">Meny</h1>
+        <h1 className="page-title">Meny</h1>
 
         {/* Filtrer‐knapp */}
         <Button

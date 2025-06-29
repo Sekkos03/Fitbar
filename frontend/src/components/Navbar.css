@@ -75,6 +75,14 @@
   max-height: 80%;
   object-fit: contain;
 }
+/* add at the bottom */
+
+.order-circle.wolt-circle {
+  /* match Wolt’s turquoise background */
+  background-color: #4ebce4;
+  /* if you want to hide the black border, uncomment: */
+  /* border-color: #35C2F6; */
+}
 
 
 /* src/components/Navbar.css */

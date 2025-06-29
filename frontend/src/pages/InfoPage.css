@@ -10,6 +10,13 @@
   background-color: #FFF8EC; /* Bakgrunnsfarge rundt bildet */
 }
 
+.page-title{
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
 /* Gjø r alle overskrifter og paragraf-tekster under .infopage-container hvite */
 .infopage-container h1,
 .infopage-container h2,

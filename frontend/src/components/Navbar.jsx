@@ -71,7 +71,7 @@ export default function Navbar() {
             </NavLink>
 
             {/* Wolt: deep link into app, fallback to website */}
-            <NavLink to="https://wolt.com/nb/nor/fredrikstad/restaurant/fitbar-fredrikstad?srsltid=AfmBOoqkjOEoFC2N5h_n7gjI7N0pjXYbv9q8kHKsfeCS9v1pk_FCvzbk" className="order-circle">
+            <NavLink to="https://wolt.com/nb/nor/fredrikstad/restaurant/fitbar-fredrikstad?srsltid=AfmBOoqkjOEoFC2N5h_n7gjI7N0pjXYbv9q8kHKsfeCS9v1pk_FCvzbk" className="order-circle wolt-circle">
               <img src={woltLogo} alt="Wolt" />
             </NavLink>
           
