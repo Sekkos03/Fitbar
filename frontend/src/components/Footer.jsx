@@ -12,16 +12,13 @@ export default function Footer() {
           {/* Center column */}
           <Col md={14}>
             <div className="d-flex justify-content-center align-items-center mb-2">
-              <a href="https://www.instagram.com/fitbar_fredrikstad/" className="text-white me-3">
-                <FaInstagram size={58} />
-              </a>
               <span className="h1 mb-2">Fitbar</span>
-              <a href="#" className="text-white ms-3">
-                <FaFacebook size={58} />
+              <a href="https://www.instagram.com/fitbar_fredrikstad/" className="text-white me-0">
+                <FaInstagram className="me-2" size={60} />
               </a>
             </div>
 
-            <div className="small">© Created by Sekou Kosiah</div>
+            <div className="small me-3">© Created by Sekou Kosiah</div>
           </Col>
 
         </Row>
