@@ -20,7 +20,7 @@ export default function InfoPage() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch('http://localhost:8080/api/info', {
+      const res = await fetch('https://fitbar.onrender.com/api/info', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message })
