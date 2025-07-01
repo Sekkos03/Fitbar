@@ -25,7 +25,7 @@ INSERT INTO meals (name, category, price, description, nutrition_info, image_pat
 
 Helt veggiss og helt rå.',
     'Kalorier: 560 kcal; Protein: 43 g; Karbohydrater: 15 g; Fett: 38 g',
-    '/images/wraps/vegan_wrap.png',
+    '/images/wraps/vegan_wrap.PNG',
     'Fisk'
   ),
   ('BBQ Cheesesteak',       'Wraps',         199.00,
@@ -33,7 +33,7 @@ Helt veggiss og helt rå.',
 
 Sunn mat i junk-forkledning. Digg nok for lørdag - bra nok for mandag.',
     'Kalorier: 615 kcal; Protein: 51 g; Karbohydrater: 20 g; Fett: 40 g',
-    '/images/wraps/bbq_cheesesteak.png',
+    '/images/wraps/bbq_cheesesteak.PNG',
     'Melk'
   ),
 
@@ -41,13 +41,13 @@ Sunn mat i junk-forkledning. Digg nok for lørdag - bra nok for mandag.',
   ('Pistachio Explosion',   'Protein Shakes',119.00,
     'Iso Whey Pistasj, banan, mandelsmør, kokos og 85% mørk sjokolade – blendes med valgfri melk. Toppes med knust pistasj. En kremet og luksuriøs energiboost med smak av ekte pistasj.',
     'Kalorier: 460 kcal; Protein: 34 g; Karbohydrater: 28 g; Fett: 25 g',
-    '/images/protein_shakes/pistachio_explosion.png',
+    '/images/protein_shakes/pistachio_explosion.PNG',
     'Melk og Nøtter'
   ),
   ('Muscle Freak',          'Protein Shakes',119.00,
     'Iso Whey Sjokolade, banan, avokado, eggehvite, mandelsmør, dadler, biter av 85% mørk sjokolade og valgfri melk. Toppes med knust mørk sjokolade. Perfekt som næringsrik drivstoff før eller etter trening.',
     'Kalorier: 480 kcal; Protein: 35 g; Karbohydrater: 32 g; Fett: 24 g',
-    '/images/protein_shakes/muscle_freak.png ',
+    '/images/protein_shakes/muscle_freak.PNG',
     'Melk'
   ),
   ('Fitberry',              'Protein Shakes',119.00,
