@@ -124,3 +124,9 @@
   font-weight: 700;
   margin-bottom: 2rem;
 }
+
+/* Gi spinner litt margin når den ligger inni en knapp */
+.btn-spinner {
+  margin-right: 0.5rem;
+}
+

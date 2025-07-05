@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Spinner } from 'react-bootstrap';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import './InfoPage.css';
 import './leaf.css';
@@ -16,9 +17,12 @@ export default function InfoPage() {
 
   const [message, setMessage] = useState('');
   const [status, setStatus] = useState(null);
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    setStatus(null);
     try {
       const res = await fetch('https://fitbar.onrender.com/api/info', {
         method: 'POST',
@@ -35,6 +39,8 @@ export default function InfoPage() {
     } catch (err) {
       console.error(err);
       setStatus('error');
+      } finally {
+      setLoading(false);
     }
   };
 
@@ -93,7 +99,24 @@ export default function InfoPage() {
                   />
                 </Form.Group>
                 <div className="text-end mt-3">
-                  <Button variant="dark" type="submit">Send</Button>
+                  <Button variant="dark" type="submit" disabled={loading}>
+            {loading
+              ? (
+                <>
+                  <Spinner
+                    as="span"
+                    animation="border"
+                    size="sm"
+                    role="status"
+                    aria-hidden="true"
+                    className="btn-spinner"
+                  />
+                  Sender…
+                </>
+              )
+              : 'Send'
+            }
+          </Button>
                 </div>
               </Form>
               {status === 'success' && <Alert variant="success" className="mt-3">Meldingen ble sendt!</Alert>}
