@@ -6,7 +6,7 @@ INSERT INTO meals (name, category, price, description, nutrition_info, image_pat
     '/images/frokost_lunsj/greek_yoghurt.png',
     'Melk'
   ),
-  ('Supercado Toast',       'Frokost/Lunsj', 139.00,
+  ('Supercado Toast',       'Frokost/Lunsj', 149.00,
     'Toastet brød med most avokado, cherrytomater, stekt kyllingbacon og speilegg. Toppes med koriander og chili flakes.',
     'Kalorier: 380 kcal; Protein: 30 g; Karbohydrater: 10 g; Fett: 28 g',
     '/images/frokost_lunsj/supercado_toast.png',
@@ -14,13 +14,13 @@ INSERT INTO meals (name, category, price, description, nutrition_info, image_pat
   ),
 
   /* Wraps */
-  ('Mediterraneo',          'Wraps',         199.00,
+  ('Mediterraneo',          'Wraps',         169.00,
     'Lefse fylt med strimlet kyllingfilet, avokado, cherrytomater, agurk, laktosefri fetaost og hummus. Friske middelhavsvibber – proteinrikt og garantert crave-worthy!',
     'Kalorier: 550 kcal; Protein: 40 g; Karbohydrater: 18 g; Fett: 29 g',
     '/images/wraps/mediterraneo.png',
     'Melk og Sesame'
   ),
-  ('Vegan Wrap',           'Wraps',         199.00,
+  ('Vegan Wrap',           'Wraps',         159.00,
     'Lefse fylt med kidneybønner, avokado, cherrytomater, agurk, salat, løk og hummus.
 
 Helt veggiss og helt rå.',
@@ -28,7 +28,7 @@ Helt veggiss og helt rå.',
     '/images/wraps/vegan_wrap.PNG',
     'Fisk'
   ),
-  ('BBQ Cheesesteak',       'Wraps',         199.00,
+  ('BBQ Cheesesteak',       'Wraps',         169.00,
     'Lefse fylt med stekt biffkjøtt, smeltet cheddar, stekt sjampinjong, paprika og rødløk. 
 
 Sunn mat i junk-forkledning. Digg nok for lørdag - bra nok for mandag.',
@@ -78,7 +78,7 @@ Sunn mat i junk-forkledning. Digg nok for lørdag - bra nok for mandag.',
     'Melk'
   ),
 
-  ('Power Latte',        'Protein Iskaffe',129.00,
+  ('Power Latte',        'Protein Iskaffe', 119.00,
     'Iso Whey Vanilje, kaffe og valgfri melk. Smaksatt med sukkerfri karamellsirup og servert iskald – fyldig, forfriskende og proteinrik latte med god smak i hver slurk.',
     'Kalorier: 270 kcal; Protein: 30 g; Karbohydrater: 16 g; Fett: 9 g',
     '/images/protein_iskaffe/power_latte.png',
